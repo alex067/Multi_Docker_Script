@@ -5,13 +5,13 @@ Lets you run the same docker command over multiple sources.
 ## For example: 
 In your parent directory, you have a folder that contains scripts that need to be ran in a docker container. 
 All the scripts are ran through the same docker run command. 
-
+```
 parent folder > "process" folder > 
 "scripts 1" folder > main.py
 "scripts 2" folder > main.py
 "scripts 3" folder > main.py
 "scripts 4" folder > main.py
-
+```
 Place the run_all.sh script inside your parent directory.
 
 Run the script as:
