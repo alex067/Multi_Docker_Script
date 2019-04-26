@@ -15,7 +15,9 @@ parent folder > "process" folder >
 Place the run_all.sh script inside your parent directory.
 
 Run the script as:
-./run_all.sh <folder name> <docker command> OR <script that runs a docker commmand>
+./run_all.sh -folder name- -docker command- OR -script that runs a docker commmand-
+
+You do not include the - - 
 
 <docker command> must use keywords ###### c_arg to name the process folder, and ###### s_arg to name the scripts folder.
  
