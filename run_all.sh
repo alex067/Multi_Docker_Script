@@ -35,7 +35,7 @@ else
       else
         run_command=${COMMAND/s_arg/$scripts}
         $run_command
-		echo $run_command
+		 $run_command
       sleep 2
       fi
     done
