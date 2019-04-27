@@ -23,15 +23,11 @@ else
     COMMAND=${COMMAND/c_arg/$c_arg}
     
     declare -a script_arr
-    for file in c_arg/*; do
+    for file in $c_arg/*; do
       script_arr=(${script_arr[@]} "${file##*/}")
     done
 
-    echo "Beginning to execute docker commands on folder c_arg."
-    
-    if [[ -f $COMMAND ]] ; then
-      echo "file type"
-    fi 
+    echo "Beginning to execute docker commands on folder $c_arg."
 
     for scripts in ${script_arr[@]}; do
       if [[ -f $COMMAND ]] ; then
@@ -39,6 +35,7 @@ else
       else
         run_command=${COMMAND/s_arg/$scripts}
         $run_command
+		echo $run_command
       sleep 2
       fi
     done
