@@ -27,3 +27,4 @@ Using the example above:
 OR 
 ./run_all.sh processs "docker run -t custom_container ./custom_script c_arg s_arg" 
 
+If you want to run a script that contains a docker command, we assume your script takes in two inputs, where the first one is the folder, and the second is name of the script folder
